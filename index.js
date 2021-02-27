@@ -1,4 +1,4 @@
-const escapeHtml = require("escape-html");
+const escapeHtml = require('escape-html');
 
 /**
  * HTTP Cloud Function.
@@ -9,5 +9,5 @@ const escapeHtml = require("escape-html");
  *                     More info: https://expressjs.com/en/api.html#res
  */
 exports.helloHttp = (req, res) => {
-  res.send(`Hello ${escapeHtml(req.query.name || req.body.name || "World")}!`);
+    res.send(`Hello ${escapeHtml(req.query.name || req.body.name || 'World')}!`);
 };
